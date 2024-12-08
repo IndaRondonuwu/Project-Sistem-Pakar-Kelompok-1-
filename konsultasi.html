@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsultasi - Diagnosa Flu Umum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Konsultasi</h1>
+        <form id="konsultasiForm">
+            <div class="form-group">
+                <label for="demamTubuh">Apakah anda mengalami demam atau peningkatan suhu tubuh?</label>
+                <select id="demamTubuh">
+                    <option value="0">Tidak Sama Sekali</option>
+                    <option value="0.2">Ringan</option>
+                    <option value="0.4">Sedang</option>
+                    <option value="0.6">Cukup Parah</option>
+                    <option value="0.8">Parah</option>
+                    <option value="1">Sangat Parah</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sakitKepala">Apakah anda tidak merasakan sakit kepala?</label>
+                <select id="sakitKepala">
+                    <option value="0">Tidak Sama Sekali</option>
+                    <option value="0.2">Ringan</option>
+                    <option value="0.4">Sedang</option>
+                    <option value="0.6">Cukup Parah</option>
+                    <option value="0.8">Parah</option>
+                    <option value="1">Sangat Parah</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mengalamiBatuk">Apakah anda mengalami batuk?</label>
+                <select id="mengalamiBatuk">
+                    <option value="0">Tidak Batuk</option>
+                    <option value="0.2">Batuk Ringan Sesekali</option>
+                    <option value="0.4">Batuk Sedang</option>
+                    <option value="0.6">Batuk Parah</option>
+                    <option value="0.8">Batuk dengan Sesak Napas</option>
+                    <option value="1">Batuk berdahak atau kesulitan bernapas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="lamaGejala">Sudah berapa lama anda mengalami gejala ini?</label>
+                <select id="lamaGejala">
+                    <option value="0">Belum Ada Gejala</option>
+                    <option value="0.2">Kurang dari 1 Hari</option>
+                    <option value="0.4">1-3 Hari</option>
+                    <option value="0.6">4-7 Hari</option>
+                    <option value="0.8">Lebih dari 1 Minggu</option>
+                    <option value="1">Lebih dari 2 Minggu</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hidungTersumbat">Apakah Anda mengalami hidung tersumbat atau berair?</label>
+                <select id="hidungTersumbat">
+                    <option value="0">Tidak Sama Sekali</option>
+                    <option value="0.2">Sedikit Berair, Tidak Mengganggu</option>
+                    <option value="0.4">Hidung Berair, tetapi Tidak Mengganggu Aktivitas</option>
+                    <option value="0.6">Hidung Tersumbat, tetapi Masih bisa Bernapas</option>
+                    <option value="0.8">Hidung Tersumbat dan agak Sulit Bernapas</option>
+                    <option value="1">Hidung Tersumbat Total, sangat Sulit Bernapas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tenggorokanSakit">Apakah tenggorokan Anda terasa sakit atau kering?</label>
+                <select id="tenggorokanSakit">
+                    <option value="0">Tidak sama sekali</option>
+                    <option value="0.2"> Sedikit terasa kering</option>
+                    <option value="0.4">Sedikit sakit saat menelan</option>
+                    <option value="0.6">Tenggorokan terasa sakit saat berbicara atau menelan</option>
+                    <option value="0.8">Tenggorokan terasa sangat sakit dan sulit menelan</option>
+                    <option value="1">Tenggorokan sangat sakit dan disertai pembengkakan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="lelahLesu">Apakah Anda merasa lelah atau lesu?</label>
+                <select id="lelahLesu">
+                    <option value="0">Tidak sama sekali</option>
+                    <option value="0.2">Sedikit lelah, tetapi masih bisa beraktivitas</option>
+                    <option value="0.4">Lelah, tetapi tetap bisa melanjutkan aktivitas</option>
+                    <option value="0.6">Cukup lelah, perlu istirahat lebih banyak</option>
+                    <option value="0.8">Sangat lelah, sulit untuk melakukan aktivitas normal</option>
+                    <option value="1">Lelah total, butuh bantuan untuk beraktivitas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nyeriOtot">Apakah Anda mengalami nyeri otot atau sendi?</label>
+                <select id="nyeriOtot">
+                    <option value="0">Tidak sama sekali</option>
+                    <option value="0.2">Sedikit pegal di beberapa bagian tubuh</option>
+                    <option value="0.4">Nyeri ringan di beberapa bagian tubuh</option>
+                    <option value="0.6">Nyeri otot atau sendi yang mengganggu aktivitas</option>
+                    <option value="0.8">Nyeri yang cukup parah, membutuhkan istirahat</option>
+                    <option value="1">Nyeri yang sangat parah, bahkan sulit bergerak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bersinBersin">Apakah Anda mengalami bersin-bersin secara terus-menerus?</label>
+                <select id="bersinBersin">
+                    <option value="0">Tidak sama sekali</option>
+                    <option value="0.2">Bersin Sekali</option>
+                    <option value="0.4">Bersin ringan, 1-2 kali dalam 30 menit</option>
+                    <option value="0.6">Bersin cukup sering, sekitar 3-4 kali dalam 30 menit</option>
+                    <option value="0.8">Bersin terus-menerus, mengganggu aktivitas</option>
+                    <option value="1">Bersin tanpa henti, sangat mengganggu aktivitas sehari-hari</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mualMuntah">Apakah Anda mengalami mual atau muntah?</label>
+                <select id="mualMuntah">
+                    <option value="0">Tidak sama sekali</option>
+                    <option value="0.2">Mual ringan, tidak menyebabkan muntah</option>
+                    <option value="0.4">Mual sedang, kadang merasa ingin muntah</option>
+                    <option value="0.6">Mual cukup mengganggu, tetapi tidak sampai muntah</option>
+                    <option value="0.8">Muntah sekali atau dua kali</option>
+                    <option value="1">Muntah terus-menerus, membutuhkan bantuan medis</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nafsuMakan">Apakah Anda merasakan penurunan nafsu makan?</label>
+                <select id="nafsuMakan">
+                    <option value="0">Tidak sama sekali</option>
+                    <option value="0.2">Sedikit berkurang nafsu makan</option>
+                    <option value="0.4">Nafsu makan sedikit menurun</option>
+                    <option value="0.6">Nafsu makan menurun cukup signifikan</option>
+                    <option value="0.8">Tidak ada nafsu makan sama sekali</option>
+                    <option value="1">Tidak bisa makan sama sekali, terasa sangat mual</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sensasi">Apakah Anda merasakan sensasi menggigil atau kedinginan?</label>
+                <select id="sensasi">
+                    <option value="0">Tidak sama sekali</option>
+                    <option value="0.2">Sedikit merasa kedinginan, tetapi masih nyaman</option>
+                    <option value="0.4">Merasa kedinginan, tetapi bisa menghangatkan diri</option>
+                    <option value="0.6">Kedinginan yang cukup mengganggu, membutuhkan selimut</option>
+                    <option value="0.8">Muntah sekali atau dua kali</option>
+                    <option value="1">Muntah terus-menerus, membutuhkan bantuan medis</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sesakNafas">Apakah Anda mengalami kesulitan bernafas atau sesak nafas?</label>
+                <select id="sesakNafas">
+                    <option value="0">Tidak sama sekali</option>
+                    <option value="0.2">Sedikit terengah-engah setelah aktivitas ringan</option>
+                    <option value="0.4">Sesak napas sesekali, tetapi masih bisa bernapas dengan normal</option>
+                    <option value="0.6">Sesak napas yang cukup mengganggu, tetapi bisa bernapas dengan perlahan</option>
+                    <option value="0.8">Kesulitan bernapas, merasa sangat sesak</option>
+                    <option value="1">Kesulitan bernapas parah, membutuhkan bantuan medis segera</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="gejala">Sudah berapa lama Anda mengalami gejala ini?</label>
+                <select id="gejala">
+                    <option value="0">Belum ada gejala</option>
+                    <option value="0.2">Kurang dari 1 hari</option>
+                    <option value="0.4">1 - 3 hari</option>
+                    <option value="0.6">4 - 7 hari</option>
+                    <option value="0.8">Lebih dari 1 minggu</option>
+                    <option value="1">Lebih dari 2 minggu</option>
+                </select>
+            </div>
+            <button type="button" onclick="diagnosis()">Diagnosa</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="diagnosis.js"></script>
+</body>
+</html>
